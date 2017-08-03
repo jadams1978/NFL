@@ -45,8 +45,8 @@ $('img').click(function() {
   let team =  $(this).attr('data-team');
   $('.text').text('loading . . .');
   console.log(team, teams[team]);
-  let url =  `http://nflarrest.com/api/v1/team/arrests/${teams[team]}`;
-
+  //let url =  `http://nflarrest.com/api/v1/team/arrests/${teams[team]}`;
+  let url = `data/${teams[team]}.json`;
   makeApiCall(url);
   //return $('button').click(makeApiCall(url));
   //return $('button').click(alert(url));
