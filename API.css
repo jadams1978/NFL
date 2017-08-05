@@ -2,35 +2,24 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgba(47, 94, 72, 0.37);
+html {
+  background-image: url("nflfieldlogo.jpeg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 h1, p {
   text-align: center;
-  color: rgba(194, 9, 37, 0.91);
-}
-
-.pictures {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.arrested {
-  text-align: center;
-  width: 50%;
-  height: 300px;
-  float: left;
-  border: 1px solid #333;
-
+  color: white;
 }
 
 .team-logo img {
   padding: 5px;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   transition: all .5s;
 }
 
@@ -40,7 +29,7 @@ img.active {
 }
 
 .team-logo {
-  background-color: rgba(105, 104, 103, 0.64);
+
 }
 
 .record {
