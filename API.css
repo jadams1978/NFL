@@ -2,13 +2,15 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   background-image: url("nflfieldlogo.jpeg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
+  text-align: center;
 
 }
 h1, p {
@@ -18,8 +20,8 @@ h1, p {
 
 .team-logo img {
   padding: 5px;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   transition: all .5s;
 }
 
@@ -51,40 +53,42 @@ img.active {
   font-style: italic;
 }
 
-.team-logo {
-  max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+.icons {
+  
+  display: block;
 }
 
-.team-logo::before,
-.team-logo::after {
-  display: table;
-  content: '';
+.icons::after {
+  content: " ";
+  display: block;
+  height: 65vh;
 }
 
-.team-logo::after {
-  clear: both;
-}
 
 .north, .south, .east, .west {
+
   float: left;
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-}
+  width: 25%;
+  text-align: center;
 
-/* Mobile defaults */
-.north, .south, .east, .west {
-  width: 100%;
 }
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
 
+  img {
+    width: auto;
+    height: 70px;
+  }
+  .icons::after {
+    height: auto;
+  }
 
   /* 1.5 columns, 1.5/12 in % */
   .north, .south, .east, .west {
-    width: 12.5%;
+
+    float: none;
+    display: inline;
+    width: 100%;
   }
 }
