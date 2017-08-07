@@ -28,22 +28,18 @@ img.active {
   transform: rotate(720deg);
 }
 
-.team-logo {
-
-}
-
 .record {
   padding: 20px 0 20px 0;
   border-top: 1px solid #333;
-  background-color: rgba(47, 94, 72, 0.37);
+  background-color: rgb(76, 114, 38);
 }
 
 .record:hover {
-  background: rgba(198, 137, 66, 0.81);
+  background: rgb(127, 191, 63);
 }
 
 .record:active {
-  color: rgba(189, 110, 19, 0.96);
+  color: rgb(76, 114, 38);
 }
 
 .player {
