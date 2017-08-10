@@ -1,94 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
 
+}
+button {
+    background: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    padding: 15px 32px;
+
+}
 body {
-  background-image: url("nflfieldlogo.jpeg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
+    background: url("nflfieldlogo.jpeg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(33, 32, 2, 0.44);
+    font-family: 'Saira', sans-serif;
 
 }
-h1, p {
-  text-align: center;
-  color: white;
-}
+#football {
 
+      height: 20vw;
+
+}
+#football img {
+    height: 20vw;
+}
+#football p {
+  margin-top: -11.5vw;
+  font-size: 2vw;
+  margin-left: 2.5vw;
+}
+h1,
+p {
+    text-align: center;
+    color: #FBF8F2;
+}
+h1 {
+    font-size: 4vw;
+}
+p {
+    font-size: 24px;
+}
 .team-logo img {
-  padding: 5px;
-  height: 60px;
-  width: 60px;
-  transition: all .5s;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    transition: all .5s;
 }
-
 img.active {
-  height: 60px;
-  transform: rotate(720deg);
+    height: 60px;
+    transform: rotate(720deg);
 }
-
 .record {
-  padding: 20px 0 20px 0;
-  border-top: 1px solid #333;
-  background-color: rgb(76, 114, 38);
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #333;
+    background-color: rgb(76, 114, 38);
 }
-
 .record:hover {
-  background: rgb(127, 191, 63);
+    background: rgb(127, 191, 63);
 }
-
 .record:active {
-  color: rgb(76, 114, 38);
+    color: rgb(76, 114, 38);
 }
-
 .player {
-  font-weight: bold;
-  font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
-
 .description {
-  font-style: italic;
+    font-style: italic;
 }
-
 .icons {
-  
-  display: block;
+    display: block;
 }
-
 .icons::after {
-  content: " ";
-  display: block;
-  height: 65vh;
+    content: " ";
+    display: block;
+    height: 65vh;
 }
-
-
-.north, .south, .east, .west {
-
-  float: left;
-  width: 25%;
-  text-align: center;
-
+.north,
+.south,
+.east,
+.west {
+    float: left;
+    width: 25%;
+    text-align: center;
 }
-
-/* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
-
-  img {
-    width: auto;
-    height: 70px;
-  }
-  .icons::after {
-    height: auto;
-  }
-
-  /* 1.5 columns, 1.5/12 in % */
-  .north, .south, .east, .west {
-
-    float: none;
-    display: inline;
-    width: 100%;
-  }
+    img {
+        width: auto;
+        height: 70px;
+    }
+    .icons::after {
+        height: auto;
+    }
+    .north,
+    .south,
+    .east,
+    .west {
+        float: none;
+        display: inline;
+        width: 100%;
+    }
 }

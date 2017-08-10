@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="API.css">
     <title>NFL Arrest Data</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header role="banner">
-      <h1>WANT TO KNOW WHICH NFL PLAYERS ARE BREAKING THE LAW?</h1>
-        <p>Pick any team to see a list of arrests dating back to 2000</p>
-        <p>Click on a record to view related youtube videos</p>
+        <h1>WANT TO KNOW WHICH NFL PLAYERS ARE BREAKING THE LAW?</h1>
+        
     </header>
+    <button type="submit" id="football">
+
+        <img src="football.PNG" alt="show teams" ><p>SHOW TEAMS</p></img>
+    </button>
     <div class="icons">
-    <section role="container" class="team-logo">
-      <div class="north">
-        <img data-team="bengals" src="images/bengals.png" />
+        <section role="container" value="container" class="team-logo">
+            <div class="north">
+                <img data-team="bengals" src="images/bengals.png" />
 
-        <img data-team="browns" src="images/browns.png" />
+                <img data-team="browns" src="images/browns.png" />
 
-        <img data-team="ravens" src="images/ravens.png" />
+                <img data-team="ravens" src="images/ravens.png" />
 
-        <img data-team="steelers" src="images/steelers.png" />
+                <img data-team="steelers" src="images/steelers.png" />
 
-        <img data-team="bears" src="images/bears.png" />
+                <img data-team="bears" src="images/bears.png" />
 
-        <img data-team="lions" src="images/lions.png" />
+                <img data-team="lions" src="images/lions.png" />
 
-        <img data-team="packers" src="images/packers.png" />
+                <img data-team="packers" src="images/packers.png" />
 
-        <img data-team="vikings" src="images/vikings.png" />
-      </div>
-    </section>
-    <section role="container" class="team-logo">
-      <div class="south">
-        <img data-team="texans" src="images/texans.png" />
+                <img data-team="vikings" src="images/vikings.png" />
+            </div>
+        </section>
+        <section role="container" class="team-logo">
+            <div class="south">
+                <img data-team="texans" src="images/texans.png" />
 
-        <img data-team="colts" src="images/colts.png" />
+                <img data-team="colts" src="images/colts.png" />
 
-        <img data-team="jaguars" src="images/jaguars.png" />
+                <img data-team="jaguars" src="images/jaguars.png" />
 
-        <img data-team="titans" src="images/titans.png" />
+                <img data-team="titans" src="images/titans.png" />
 
-        <img data-team="falcons" src="images/falcons.png" />
+                <img data-team="falcons" src="images/falcons.png" />
 
-        <img data-team="panthers" src="images/panthers.png" />
+                <img data-team="panthers" src="images/panthers.png" />
 
-        <img data-team="saints" src="images/saints.png" />
+                <img data-team="saints" src="images/saints.png" />
 
-        <img data-team="buccaneers" src="images/buccaneers.png" />
-      </div>
-    </section>
-    <section role="container" class="team-logo">
-      <div class="east">
-        <img data-team="bills" src="images/bills.png" />
+                <img data-team="buccaneers" src="images/buccaneers.png" />
+            </div>
+        </section>
+        <section role="container" class="team-logo">
+            <div class="east">
+                <img data-team="bills" src="images/bills.png" />
 
-        <img data-team="dolphins" src="images/dolphins.png" />
+                <img data-team="dolphins" src="images/dolphins.png" />
 
-        <img data-team="patriots" src="images/patriots.png" />
+                <img data-team="patriots" src="images/patriots.png" />
 
-        <img data-team="jets" src="images/jets.png" />
+                <img data-team="jets" src="images/jets.png" />
 
-        <img data-team="cowboys" src="images/cowboys.png" />
+                <img data-team="cowboys" src="images/cowboys.png" />
 
-        <img data-team="giants" src="images/giants.png" />
+                <img data-team="giants" src="images/giants.png" />
 
-        <img data-team="eagles" src="images/eagles.png" />
+                <img data-team="eagles" src="images/eagles.png" />
 
-        <img data-team="redskins" src="images/redskins.png" />
-      </div>
-    </section>
-    <section role="container" class="team-logo">
-      <div class="west">
-        <img data-team="broncos" src="images/broncos.png" />
+                <img data-team="redskins" src="images/redskins.png" />
+            </div>
+        </section>
+        <section role="container" class="team-logo">
+            <div class="west">
+                <img data-team="broncos" src="images/broncos.png" />
 
-        <img data-team="chiefs" src="images/chiefs.png" />
+                <img data-team="chiefs" src="images/chiefs.png" />
 
-        <img data-team="raiders" src="images/raiders.png" />
+                <img data-team="raiders" src="images/raiders.png" />
 
-        <img data-team="chargers" src="images/chargers.png" />
+                <img data-team="chargers" src="images/chargers.png" />
 
-        <img data-team="cardinals" src="images/cardinals.png" />
+                <img data-team="cardinals" src="images/cardinals.png" />
 
-        <img data-team="49ers" src="images/49ers.png" />
+                <img data-team="49ers" src="images/49ers.png" />
 
-        <img data-team="seahawks" src="images/seahawks.png" />
+                <img data-team="seahawks" src="images/seahawks.png" />
 
-        <img data-team="rams" src="images/rams.png" />
-      </div>
-    </section>
-  </div>
+                <img data-team="rams" src="images/rams.png" />
+            </div>
+        </section>
+    </div>
 
-
-      <p class="text"></p>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="API.js"></script>
     <script src="youtube.js"></script>
-  </body>
+</body>
+
 </html>
