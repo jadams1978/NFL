@@ -28,8 +28,17 @@ body {
 #football {
 
       height: 20vw;
+      animation: mymove 5s forwards;
+      position: relative;
+
 
 }
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+  }
 #football img {
     height: 20vw;
 }
