@@ -22,23 +22,13 @@ function getAPIdata(settings, callback) {
     console.log(callback)
 }
 
-$(function() {
-    function setAspectRatio() {
-      $('iframe').each(function() {
-        $(this).css('height', $(this).width() * 9/16);
-      });
-    }
-
-    setAspectRatio();
-  $(window).resize(setAspectRatio);
-});
 
 function showResults(data) {
     if (!data.items[0]) {
         $('.video').html('<div>Sorry no video found</div>');
 
     } else {
-        $('.video').html('<iframe src="https://www.youtube.com/embed/' + data.items[0].id.videoId + '"frameborder="0" allowfullscreen></iframe><p>' + data.items[0].snippet.title + '</p>');
+        $('.video').html('<iframe width="500" height="250" src="https://www.youtube.com/embed/' + data.items[0].id.videoId + '"frameborder="0" allowfullscreen></iframe><p>' + data.items[0].snippet.title + '</p>');
     }
     console.log(data);
 
