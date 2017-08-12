@@ -82,13 +82,6 @@ $('img').click(function() {
     makeApiCall(url);
 });
 
-$(function() {
-    function setAspectRatio() {
-      $('iframe').each(function() {
-        $(this).css('height', $(this).width() * 9/16);
-      });
-    }
-
     setAspectRatio();
   $(window).resize(setAspectRatio);
 });

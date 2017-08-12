@@ -22,6 +22,13 @@ function getAPIdata(settings, callback) {
     console.log(callback)
 }
 
+$(function() {
+    function setAspectRatio() {
+      $('iframe').each(function() {
+        $(this).css('height', $(this).width() * 9/16);
+      });
+    }
+
 function showResults(data) {
     if (!data.items[0]) {
         $('.video').html('<div>Sorry no video found</div>');
