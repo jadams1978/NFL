@@ -28,14 +28,14 @@ body {
 #football {
 
       height: 20vw;
-      animation: bounce 2s forwards;
+      animation: bounce 1.5s forwards;
       position: relative;
 
 
 }
 @keyframes bounce {
     0%   {top: 0px;}
-    100% {top: 100px;}
+    100% {top: 50px;}
   }
 #football img {
     height: 20vw;
@@ -55,6 +55,10 @@ h1 {
 }
 p {
     font-size: 24px;
+}
+.video-player p {
+    color: #F18C08;
+    font-size: 32px;
 }
 .team-logo img {
     padding: 5px;

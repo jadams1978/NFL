@@ -77,6 +77,7 @@ $('img').click(function() {
     $('img').removeClass('active');
     $(this).addClass('active');
     let team = $(this).attr('data-team');
+    $('.text').text('loading . . .');
     console.log(team, teams[team]);
     let url = `data/${teams[team]}.json`;
     makeApiCall(url);
