@@ -28,15 +28,15 @@ body {
 #football {
 
       height: 20vw;
-      animation: mymove 5s forwards;
+      animation: bounce 2s forwards;
       position: relative;
 
 
 }
-@keyframes mymove {
+@keyframes bounce {
     0%   {top: 0px;}
-    25%  {top: 200px;}
-    75%  {top: 50px}
+    25%  {top: 33.33px;}
+    75%  {top: 66.66px;}
     100% {top: 100px;}
   }
 #football img {
