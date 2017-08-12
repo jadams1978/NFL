@@ -68,8 +68,8 @@ const teams = {
 
 $('.team-logo').hide();
 $('button').on('click', function() {
-    $('button').fadeOut(400, function() {
-        $('.team-logo').fadeIn(800);
+    $('button').fadeOut(200, function() {
+        $('.team-logo').fadeIn(400);
     });
 });
 
@@ -80,6 +80,17 @@ $('img').click(function() {
     console.log(team, teams[team]);
     let url = `data/${teams[team]}.json`;
     makeApiCall(url);
+});
+
+$(function() {
+    function setAspectRatio() {
+      $('iframe').each(function() {
+        $(this).css('height', $(this).width() * 9/16);
+      });
+    }
+
+    setAspectRatio();
+  $(window).resize(setAspectRatio);
 });
 
 function youTubeClick() {

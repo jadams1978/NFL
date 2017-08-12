@@ -35,8 +35,6 @@ body {
 }
 @keyframes bounce {
     0%   {top: 0px;}
-    25%  {top: 33.33px;}
-    75%  {top: 66.66px;}
     100% {top: 100px;}
   }
 #football img {
@@ -73,14 +71,14 @@ img.active {
 }
 .record {
     padding: 20px 0 20px 0;
-    border-top: 1px solid #333;
-    background-color: rgba(63, 191, 63, 0.6);
+    border-top: 1px solid black;
+    background-color: #085EB4;
 }
 .record:hover {
-    background: rgba(63, 127, 191, 0.6);
+    background: #B40808;
 }
 .record:active {
-    color: rgba(193, 66, 66, 0.6);
+    background: #B4B408;
 }
 .player {
     font-weight: bold;
