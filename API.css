@@ -65,19 +65,19 @@ p {
     transition: all .5s;
 }
 img.active {
-    height: 60px;
+    height: 80px;
     transform: rotate(720deg);
 }
 .record {
     padding: 20px 0 20px 0;
     border-top: 1px solid #333;
-    background-color: rgb(76, 114, 38);
+    background-color: rgba(63, 191, 63, 0.6);
 }
 .record:hover {
-    background: rgb(127, 191, 63);
+    background: rgba(63, 127, 191, 0.6);
 }
 .record:active {
-    color: rgb(76, 114, 38);
+    color: rgba(193, 66, 66, 0.6);
 }
 .player {
     font-weight: bold;

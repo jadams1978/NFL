@@ -16,6 +16,7 @@ function makeApiCall(url) {
               <div class="year"><span>Year: </span>${data[i].Year}</div>
               <div class="category" data-category="${data[i]["Category"]}"><span>Category: </span>${data[i]["Category"]}</div>
               <div class="description"><span>Description: </span>${data[i].Description}</div>
+              <div class="video-click"><p>Click The Record To View Video</p></div>
             </div>`;
             }
             $('.text').html(HTML);
@@ -76,7 +77,6 @@ $('img').click(function() {
     $('img').removeClass('active');
     $(this).addClass('active');
     let team = $(this).attr('data-team');
-    $('.text').text('loading . . .');
     console.log(team, teams[team]);
     let url = `data/${teams[team]}.json`;
     makeApiCall(url);
