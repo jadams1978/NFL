@@ -82,9 +82,6 @@ $('img').click(function() {
     makeApiCall(url);
 });
 
-    setAspectRatio();
-  $(window).resize(setAspectRatio);
-});
 
 function youTubeClick() {
     $('.record').click(function() {

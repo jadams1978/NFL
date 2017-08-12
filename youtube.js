@@ -29,6 +29,10 @@ $(function() {
       });
     }
 
+    setAspectRatio();
+  $(window).resize(setAspectRatio);
+});
+
 function showResults(data) {
     if (!data.items[0]) {
         $('.video').html('<div>Sorry no video found</div>');
