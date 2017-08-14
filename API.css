@@ -27,22 +27,22 @@ body {
 }
 #football {
 
-      height: 20vw;
-      animation: bounce 1.5s forwards;
+      height: 16vw;
+      animation: mymove 1.5s forwards;
       position: relative;
 
 
 }
-@keyframes bounce {
+@keyframes mymove {
     0%   {top: 0px;}
-    100% {top: 50px;}
+    100% {top: 20px;}
   }
 #football img {
-    height: 20vw;
+    height: 16vw;
 }
 #football p {
-  margin-top: -11.5vw;
-  font-size: 2vw;
+  margin-top: -9.5vw;
+  font-size: 1.5vw;
   margin-left: 2.5vw;
 }
 h1,
