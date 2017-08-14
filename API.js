@@ -73,7 +73,7 @@ $('button').on('click', function() {
     });
 });
 
-$('img').click(function() {
+$('.icons img').click(function() {
     $('img').removeClass('active');
     $(this).addClass('active');
     let team = $(this).attr('data-team');
