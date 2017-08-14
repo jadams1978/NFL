@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Saira');
-
 * {
     box-sizing: border-box;
-
 }
 button {
     background: transparent;
@@ -10,7 +8,6 @@ button {
     border: none;
     outline: none;
     padding: 15px 32px;
-
 }
 body {
     background: url("nflfieldlogo.jpeg");
@@ -25,27 +22,42 @@ body {
     font-family: 'Saira', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 #football {
-
-      height: 16vw;
-      animation: mymove 1.5s forwards;
-      position: relative;
-
-
+    height: 16vw;
+    position: relative;
+    animation: mymove 1.5s forwards;
 }
 @keyframes mymove {
-    0%   {top: 0px;}
-    100% {top: 20px;}
-  }
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: 150px;
+    }
+    40% {
+        left: 200px;
+    }
+    60% {
+        transform: rotate(180deg);
+        left: 0px;
+    }
+    80% {
+        transform: rotate(180deg);
+        transform: scale(3);
+    }
+    100% {
+        top: 20px;
+        transform: scale(2);
+    }
+}
 #football img {
     height: 16vw;
 }
 #football p {
-  margin-top: -9.5vw;
-  font-size: 1.5vw;
-  margin-left: 2.5vw;
+    margin-top: -9.5vw;
+    font-size: 1.5vw;
+    margin-left: 2.5vw;
 }
 h1,
 p {
@@ -61,12 +73,6 @@ p {
 .video-click p {
     color: #F18C08;
     font-size: 32px;
-}
-.team-logo img {
-    padding: 5px;
-    height: 60px;
-    width: 60px;
-    transition: all .5s;
 }
 img.active {
     height: 80px;
@@ -110,15 +116,26 @@ img.active {
     text-align: center;
 }
 iframe {
-  width: 100vw;
-  height: 100vw;
+    width: 100vw;
+    height: 100vw;
+    max-height: 400px;
+    max-width: 600px;
 }
-
-
+div.ytp-cued-thumbnail-overlay-image {
+    background-size: contain !important;
+}
+.team-logo img {
+    padding: 0px;
+    height: 60px;
+    width: 70px;
+    transition: all .5s;
+}
 @media only screen and (min-width: 640px) {
-    img {
-        width: auto;
-        height: 70px;
+    .team-logo img {
+        height: inherit;
+        width: 70px;
+        padding: 5px;
+        vertical-align: middle;
     }
     .icons::after {
         height: auto;
