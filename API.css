@@ -59,20 +59,30 @@ body {
     font-size: 1.5vw;
     margin-left: 2.5vw;
 }
-h1,
+.team-logo img:hover {
+  transform: rotate(720deg);
+}
+#football img:hover {
+  transform: skew(-20deg);
+}
+h2,
 p {
     text-align: center;
     color: #FBF8F2;
 }
 h1 {
-    font-size: 4vw;
+  font-size: 4vw;
+  color: #0F9DE4;
+}
+h2 {
+    font-size: 3vw;
 }
 p {
     font-size: 24px;
 }
 .video-click p {
     color: #F18C08;
-    font-size: 32px;
+    font-size: 24px;
 }
 img.active {
     height: 80px;
@@ -82,7 +92,7 @@ img.active {
     clear: both;
 }
 .record {
-    padding: 20px 0 20px 0;
+    padding: 20px 20px 20px 20px;
     border-top: 1px solid black;
     background-color: #085EB4;
 }
