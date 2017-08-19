@@ -12,6 +12,7 @@ function makeApiCall(url) {
                 HTML +=
                     `<div class="record">
               <div class="player" data-name="${data[i].Name}"><span>Player: </span>${data[i].Name}</div>
+              <div class="teamname"><span>Team: </span>${data[i].Team_name}</div>
               <div class="position"><span>Position: </span>${data[i].Position_name}</div>
               <div class="year"><span>Year: </span>${data[i].Year}</div>
               <div class="category" data-category="${data[i]["Category"]}"><span>Category: </span>${data[i]["Category"]}</div>
